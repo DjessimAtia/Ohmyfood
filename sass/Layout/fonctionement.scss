@@ -1,0 +1,28 @@
+.fonctionement 
+{@include fonctionement }
+ .fonctionement .card {
+    @include card
+}
+.fonctionement-card{
+    @include fonctionement-card
+}
+@media (min-width: 1024px) {
+    .fonctionement-card{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.fonctionement article{
+    @include article
+
+}
+.fonctionement p {
+    @include fonctionementp
+}
+
+@media (min-width: 1024px) {
+    .fonctionement{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

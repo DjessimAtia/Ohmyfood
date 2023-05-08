@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin: 0px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+
+/******* FONCTIONEMENT****/
+/***Restaurants*****/
+nav p {
+  font-family: "Shrikhand";
+}
+
+nav a {
+  position: absolute;
+  left: 23px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  font-family: shrikhand;
+  font-size: 30px;
+  align-items: center;
+  height: 100px;
+}
+
+.footer {
+  background: #353535;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: white;
+}
+
+footer p {
+  margin: 0px;
+}
+
+@media (min-width: 1024px) {
+  footer p {
+    margin: 16px;
+  }
+}
+footer h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: shrikhand;
+}
+
+.footer .icone {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row-reverse;
+    gap: 20px;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  gap: 17px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  height: 50px;
+}
+
+.fonctionement {
+  background: #FFFFFF;
+  gap: 25px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionement .card {
+  width: 100%;
+  height: 72.38px;
+  left: 32.51px;
+  top: 505px;
+  display: flex;
+  align-items: center;
+  background: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.fonctionement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionement-card {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.fonctionement article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.fonctionement p {
+  background: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F6F6F6;
+  font-size: 14.18px;
+  margin-left: -12.51px;
+}
+
+@media (min-width: 1024px) {
+  .fonctionement {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.Restaurants {
+  background: #F7F7F7;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.Restaurants-card {
+  flex-wrap: wrap;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-bottom: 29px;
+}
+
+.Restaurants a {
+  width: 100%;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .Restaurants a {
+    width: 49%;
+  }
+}
+.Restaurants .card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 100%;
+}
+
+.Restaurants .card img {
+  width: 100%;
+  height: 231px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.bouton-nouveau {
+  background: #99E2D0;
+  Width: 80px;
+  Height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 2px; */
+  position: absolute;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  right: 5%;
+  top: 5%;
+}
+
+.Restaurants .card-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.card-txt {
+  color: black;
+  padding: 12px;
+}
+
+.Restaurants p {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .Restaurants {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.menu {
+  position: relative;
+  margin-top: -40px;
+  width: 100%;
+  height: 1307px;
+  border-radius: 45px 45px 0px 0px;
+  background: #F7F7F7;
+}
+
+.menu-title {
+  display: flex;
+  margin-left: 27px;
+}
+
+.menu-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.menu h1 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Entrer, .Plats, .Desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.menu .card {
+  width: 100%;
+  height: 69px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.menu .card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-txt {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15.0431px;
+  line-height: 18px;
+}
+
+.menu h2 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border-bottom: 3px solid;
+  width: 40px;
+  color: #008766;
+}
+
+.prix {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.0431px;
+  line-height: 18px;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-card {
+    width: 60%;
+  }
+}
+.bouton {
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  display: flex;
+  justify-content: center;
+  width: 210px;
+  height: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.Commander {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bouton-retour {
+  color: black;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+.Restaurants{
+    @include restaurant
+}
+.Restaurants-card{
+    @include Restaurants-card
+}
+.Restaurants a {
+    @include restaurans-a
+}
+@media (min-width: 1024px){
+.Restaurants a {
+    width: 49%;
+}
+}
+ .Restaurants .card {
+    @include restaurantscard
+}
+.Restaurants .card img{
+    @include img
+}
+.bouton-nouveau{
+    @include bouton-nouveau
+}
+.Restaurants .card-content{
+    @include cardcontent
+}
+.card-txt{
+    @include cardtxt
+}
+.Restaurants p {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+@media (min-width: 1024px){
+.Restaurants {
+    padding-left: 10%;
+    padding-right: 10%;}
+}

@@ -1,0 +1,46 @@
+.footer {
+    background: #353535;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: white;
+}
+
+footer p {
+    margin: 0px;
+}
+@media (min-width: 1024px){
+footer p {
+    margin: 16px;
+}
+}
+
+footer h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: shrikhand;
+}
+
+.footer .icone {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+@media (min-width: 1024px){
+.footer {
+    flex-direction: row-reverse;
+    gap: 20px;
+    display: flex;
+}}
+
+@media (min-width: 1024px){
+.footer-content {
+    display: flex;
+    flex-direction: row;
+}
+}

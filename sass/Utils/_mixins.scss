@@ -1,0 +1,230 @@
+@mixin localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 50px;
+}
+
+@mixin exploration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    gap: 17px;
+}
+
+@mixin card {
+    width: 100%;
+    height: 72.38px;
+    left: 32.51px;
+    top: 505px;
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+}
+
+@mixin restaurant {
+    background: #F7F7F7;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+}
+
+@mixin bouton {
+    border-radius: 25px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    display: flex;
+    justify-content: center;
+    width: 210px;
+    height: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/******* FONCTIONEMENT****/
+@mixin fonctionement-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@mixin article {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@mixin fonctionementp {
+    background: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6F6F6;
+    font-size: 14.18px;
+    margin-left: -12.51px;
+}
+
+@mixin fonctionement {
+    background: #FFFFFF;
+    gap: 25px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+/***Restaurants*****/
+@mixin Restaurants-card {
+    flex-wrap: wrap;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 29px;
+}
+
+@mixin restaurans-a {
+    width: 100%;
+    text-decoration: none;
+}
+
+@mixin restaurantscard {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 100%;
+}
+
+@mixin img {
+    width: 100%;
+    height: 231px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+@mixin bouton-nouveau {
+    background: #99E2D0;
+    Width: 80px;
+    Height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 2px; */
+    position: absolute;
+    color: #008766;
+    font-size: 14px;
+    font-weight: 500;
+    right: 5%;
+    top: 5%;
+}
+
+@mixin cardcontent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+
+@mixin cardtxt {
+    color: black;
+    padding: 12px;
+}
+
+@mixin menu {
+    position: relative;
+    margin-top: -40px;
+    width: 100%;
+    height: 1307px;
+    border-radius: 45px 45px 0px 0px;
+    background: #F7F7F7;
+}
+
+@mixin menu-title {
+    display: flex;
+    margin-left: 27px;
+}
+
+@mixin menu-img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+@mixin menu-card {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin entrer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+}
+
+@mixin menucard {
+    width: 100%;
+    height: 69px;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+}
+
+@mixin card-conteneur {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@mixin menu-txt {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15.0431px;
+    line-height: 18px;
+}
+
+@mixin bouton-commander {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+@mixin bouton-retour {
+
+    color: black;
+    font-size: 16px;
+}
+
+@mixin prix {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.0431px;
+    line-height: 18px;
+}

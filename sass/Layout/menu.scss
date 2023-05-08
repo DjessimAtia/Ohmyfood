@@ -1,0 +1,63 @@
+.menu{
+    @include menu
+}
+.menu-title{
+    @include menu-title
+}
+.menu-img  img {
+    @include menu-img
+}
+.menu h1{
+font-family: 'Shrikhand';
+font-style: italic;
+font-weight: 400;
+font-size: 28px;
+line-height: 41px;}
+.menu-card{
+    @include menu-card
+}
+.Entrer, .Plats, .Desserts{
+    @include entrer
+}
+
+.menu .card{
+    @include menucard
+}
+
+h3{
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+.menu .card-content {
+  @include card-conteneur
+}
+.menu-txt{
+   @include menu-txt}
+
+   .menu h2 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+    width: 40px;
+    color: #008766;
+}
+.prix{
+    @include prix
+}
+@media (min-width: 1024px){
+.menu {
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+}
+@media (min-width: 1024px){
+.menu-card {
+    width: 60%;
+}}
