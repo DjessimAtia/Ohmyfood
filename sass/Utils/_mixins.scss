@@ -162,8 +162,11 @@
 
 @mixin menu-title {
     display: flex;
-    margin-left: 27px;
+    padding: 17px;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 @mixin menu-img {
     object-fit: cover;
@@ -227,4 +230,10 @@
     font-weight: 700;
     font-size: 15.0431px;
     line-height: 18px;
+}
+@mixin icone{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
 }
