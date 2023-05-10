@@ -1,28 +1,32 @@
 .fonctionement 
-{@include fonctionement }
+{@include fonctionement; 
+    @include colone ;
+    @media (min-width: 1024px) {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
  .fonctionement .card {
-    @include card
+    @include card ;
+    @include flex ;
+justify-content: flex-start;
 }
 .fonctionement-card{
-    @include fonctionement-card
+    @include fonctionement-card ;
+    @include colone ;
+    @media (min-width: 1024px) {
+        
+            display: flex;
+            flex-direction: row;
+        }
+    
 }
-@media (min-width: 1024px) {
-    .fonctionement-card{
-        display: flex;
-        flex-direction: row;
-    }
-}
+
 .fonctionement article{
-    @include article
-
-}
+    @include article;
+    @include flex;   }
 .fonctionement p {
-    @include fonctionementp
-}
+    @include fonctionementp;
+ @include flex}
 
-@media (min-width: 1024px) {
-    .fonctionement{
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
+ 

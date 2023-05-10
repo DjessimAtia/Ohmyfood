@@ -19,6 +19,10 @@ p {
   margin: 0px;
 }
 
+h3 {
+  margin: 0px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 18px;
@@ -26,10 +30,14 @@ h2 {
   margin: 0;
 }
 
+/***LOCALISATION****/
+/*******EXPLORATION*****/
+/*******BOUTON*******/
 /******* FONCTIONEMENT****/
 /***Restaurants*****/
+/***MENU****/
 nav p {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
 }
 
 nav a {
@@ -40,15 +48,21 @@ nav a {
 nav {
   display: flex;
   justify-content: center;
-  font-family: shrikhand;
-  font-size: 30px;
   align-items: center;
+  font-size: 30px;
   height: 100px;
 }
 
 .footer {
   background: #353535;
   padding: 20px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row-reverse;
+    gap: 20px;
+    display: flex;
+  }
 }
 
 .footer-content {
@@ -57,9 +71,11 @@ nav {
   gap: 7px;
   color: white;
 }
-
-footer p {
-  margin: 0px;
+@media (min-width: 1024px) {
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -71,7 +87,7 @@ footer h1 {
   color: white;
   font-weight: 400;
   font-size: 18px;
-  font-family: shrikhand;
+  font-family: "Shrikhand", cursive;
 }
 
 .footer .icone {
@@ -80,36 +96,23 @@ footer h1 {
   gap: 7px;
 }
 
-@media (min-width: 1024px) {
-  .footer {
-    flex-direction: row-reverse;
-    gap: 20px;
-    display: flex;
-  }
-}
-@media (min-width: 1024px) {
-  .footer-content {
-    display: flex;
-    flex-direction: row;
-  }
-}
 .exploration {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #F6F6F6;
   gap: 17px;
+  display: flex;
+  flex-direction: column;
 }
 
 .localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 17px;
   background-color: #EAEAEA;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fonctionement {
@@ -119,35 +122,42 @@ footer h1 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1024px) {
+  .fonctionement {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 
 .fonctionement .card {
   width: 100%;
   height: 72.38px;
-  left: 32.51px;
-  top: 505px;
-  display: flex;
-  align-items: center;
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fonctionement-card {
+  gap: 25px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
-
 @media (min-width: 1024px) {
   .fonctionement-card {
     display: flex;
     flex-direction: row;
   }
 }
+
 .fonctionement article {
-  display: flex;
-  align-items: center;
   gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fonctionement p {
@@ -155,25 +165,25 @@ footer h1 {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #F6F6F6;
   font-size: 14.18px;
   margin-left: -12.51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.Restaurants {
+  background: #F7F7F7;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 1024px) {
-  .fonctionement {
+  .Restaurants {
     padding-left: 10%;
     padding-right: 10%;
   }
-}
-.Restaurants {
-  background: #F7F7F7;
-  display: flex;
-  padding: 25px;
-  flex-direction: column;
 }
 
 .Restaurants-card {
@@ -188,18 +198,17 @@ footer h1 {
 .Restaurants a {
   width: 100%;
   text-decoration: none;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
 @media (min-width: 1024px) {
   .Restaurants a {
     width: 49%;
   }
 }
+
 .Restaurants .card {
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   width: 100%;
 }
 
@@ -210,28 +219,14 @@ footer h1 {
   object-fit: cover;
 }
 
-.bouton-nouveau {
-  background: #99E2D0;
-  Width: 80px;
-  Height: 29px;
+.Restaurants .card-content {
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-radius: 2px; */
-  position: absolute;
-  color: #008766;
-  font-size: 14px;
-  font-weight: 500;
-  right: 5%;
-  top: 5%;
-}
-
-.Restaurants .card-content {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: white;
   justify-content: space-between;
+  border-radius: 15px;
 }
 
 .card-txt {
@@ -246,12 +241,36 @@ footer h1 {
   line-height: 20px;
 }
 
-@media (min-width: 1024px) {
-  .Restaurants {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+.Restaurants .fa-regular {
+  position: absolute;
 }
+
+.Restaurants .fa-solid:hover {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.8s ease-in 0.3s;
+}
+
+.Restaurants .fa-solid:not(:hover) {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1;
+  transition: opacity 0.8s ease-in 0.3s;
+  opacity: 0;
+}
+
+.Restaurants a :hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
 .menu {
   position: relative;
   margin-top: -40px;
@@ -260,14 +279,30 @@ footer h1 {
   border-radius: 45px 45px 0px 0px;
   background: #F7F7F7;
 }
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 
 .menu-title {
   display: flex;
-  padding: 17px;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
 }
 
+@media (min-width: 1024px) {
+  .menu-title {
+    gap: 25px;
+    padding: 0px;
+  }
+}
 .menu-img img {
   object-fit: cover;
   width: 100%;
@@ -275,7 +310,7 @@ footer h1 {
 }
 
 .menu h1 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: 400;
   font-size: 28px;
@@ -286,6 +321,11 @@ footer h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 1024px) {
+  .menu-card {
+    width: 60%;
+  }
 }
 
 .Entrer, .Plats, .Desserts {
@@ -303,19 +343,11 @@ footer h1 {
   border-radius: 15.0431px;
 }
 
-h3 {
-  margin: 0px;
-}
-
-p {
-  margin: 0px;
-}
-
 .menu .card-content {
   padding: 10px;
+  gap: 6px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
 }
 
 .menu-txt {
@@ -344,25 +376,33 @@ p {
   line-height: 18px;
 }
 
-@media (min-width: 1024px) {
-  .menu {
-    align-items: center;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-  }
+.menu .fa-regular {
+  position: absolute;
 }
-@media (min-width: 1024px) {
-  .menu-card {
-    width: 60%;
-  }
+
+.menu .fa-solid:hover {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.8s ease-in 0.3s;
 }
+
+.menu .fa-solid:not(:hover) {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1;
+  transition: opacity 0.8s ease-in 0.3s;
+  opacity: 0;
+}
+
 .bouton {
-  border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  display: flex;
-  justify-content: center;
   width: 210px;
   height: 50px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -372,17 +412,41 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   margin-bottom: 30px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.bouton:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  filter: brightness(1.2);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.bouton-nouveau {
+  background: #99E2D0;
+  Width: 80px;
+  Height: 29px;
+  position: absolute;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  right: 5%;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***MENU*****/
 .Commander {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin: 20px;
 }
 
 .bouton-retour {

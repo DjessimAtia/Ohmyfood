@@ -1,22 +1,43 @@
 .menu{
-    @include menu
+    @include menu ;
+    @media (min-width: 1024px){
+       @include colone;
+            align-items: center;
+            width: 80%;
+                 margin-left: 10%;
+        }
+        
 }
 .menu-title{
-    @include menu-title
+    @include  flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+@media (min-width: 1024px){
+.menu-title{
+     gap: 25px;
+     padding: 0px;
+}
 }
 .menu-img  img {
     @include menu-img
 }
 .menu h1{
-font-family: 'Shrikhand';
+font-family: $font-cursive;
 font-style: italic;
 font-weight: 400;
 font-size: 28px;
 line-height: 41px;}
 .menu-card{
-    @include menu-card
+   @include colone;
+   gap: 20px;
+    @media (min-width: 1024px){
+       
+            width: 60%;
+        }
 }
 .Entrer, .Plats, .Desserts{
+    @include colone;
     @include entrer
 }
 
@@ -24,14 +45,9 @@ line-height: 41px;}
     @include menucard
 }
 
-h3{
-    margin: 0px;
-}
-p{
-    margin: 0px;
-}
 .menu .card-content {
-  @include card-conteneur
+  @include card-conteneur;
+  @include colone
 }
 .menu-txt{
    @include menu-txt}
@@ -48,16 +64,16 @@ p{
 .prix{
     @include prix
 }
-@media (min-width: 1024px){
-.menu {
-    align-items: center;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
+
+
+.menu .fa-regular{
+    position: absolute;
 }
-}
-@media (min-width: 1024px){
-.menu-card {
-    width: 60%;
-}}
+.menu .fa-solid:hover {
+    @include hover
+  }
+  .menu .fa-solid:not(:hover) {
+    @include nothover
+  }
+
+

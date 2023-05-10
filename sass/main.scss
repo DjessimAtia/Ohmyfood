@@ -1,5 +1,5 @@
-@import "./Base/reset.scss" , "./Base/typography.scss";
+@import "./Base/reset.scss" ;
 @import "./Utils/variables", "./Utils/mixins";
 @import "./Layout/header", "./Layout/footer", "./Layout/Exploration.scss" ,"./Layout/Localisation.scss","./Layout/fonctionement.scss","./Layout/restaurant.scss", "./Layout/menu.scss" ;
-@import "./Components/bouton.scss", "./Components/bouton-commander.scss", "./Components/bouton-retour.scss","./Components/icone.scss" ;
+@import "./Components/bouton.scss","./Components/icone.scss" ;
 

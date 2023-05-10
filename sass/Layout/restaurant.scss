@@ -1,28 +1,35 @@
 .Restaurants{
-    @include restaurant
+    @include restaurant ;
+    @include colone;
+    @media (min-width: 1024px){
+       
+            padding-left: 10%;
+            padding-right: 10%;}
+        
 }
 .Restaurants-card{
     @include Restaurants-card
 }
 .Restaurants a {
-    @include restaurans-a
-}
-@media (min-width: 1024px){
-.Restaurants a {
-    width: 49%;
-}
-}
+    @include restaurans-a ;
+    @media (min-width: 1024px){
+    
+            width: 49%;
+        }
+        }
+
+
  .Restaurants .card {
     @include restaurantscard
 }
 .Restaurants .card img{
     @include img
 }
-.bouton-nouveau{
-    @include bouton-nouveau
-}
 .Restaurants .card-content{
-    @include cardcontent
+    @include cardcontent ;
+    @include flex;
+    justify-content: space-between;
+    border-radius: 15px;
 }
 .card-txt{
     @include cardtxt
@@ -33,9 +40,17 @@
     font-size: 17px;
     line-height: 20px;
 }
-
-@media (min-width: 1024px){
-.Restaurants {
-    padding-left: 10%;
-    padding-right: 10%;}
+.Restaurants .fa-regular{
+    position: absolute;
 }
+.Restaurants .fa-solid:hover {
+   @include hover
+  }
+  
+  .Restaurants .fa-solid:not(:hover){
+  @include nothover
+  }
+  .Restaurants a :hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1);
+  }

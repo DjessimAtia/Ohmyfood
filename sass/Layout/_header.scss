@@ -1,5 +1,5 @@
 nav p {
-    font-family: 'Shrikhand';
+    font-family: $font-cursive;
 }
 
 nav a{
@@ -7,10 +7,7 @@ nav a{
     left: 23px;
 }
 nav {
-    display: flex;
-    justify-content: center;
-    font-family: shrikhand;
-    font-size: 30px;
-    align-items: center;
-    height: 100px;
+    @include flex;
+     font-size: 30px;
+   height: 100px;
 }
