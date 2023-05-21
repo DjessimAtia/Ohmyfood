@@ -1,7 +1,7 @@
 .fonctionement 
 {@include fonctionement; 
     @include colone ;
-    @media (min-width: 1024px) {
+    @media (min-width: 767px) {
             padding-left: 10%;
             padding-right: 10%;
         }
@@ -14,7 +14,7 @@ justify-content: flex-start;
 .fonctionement-card{
     @include fonctionement-card ;
     @include colone ;
-    @media (min-width: 1024px) {
+    @media (min-width: 767px) {
         
             display: flex;
             flex-direction: row;
@@ -29,4 +29,8 @@ justify-content: flex-start;
     @include fonctionementp;
  @include flex}
 
- 
+ .fonctionement .card:hover{
+    background-color:  #F5EDFF;
+    color: $color-primary;
+ }
+

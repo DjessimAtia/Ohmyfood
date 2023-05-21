@@ -21,6 +21,7 @@ p {
 
 h3 {
   margin: 0px;
+  color: black;
 }
 
 h2 {
@@ -36,6 +37,47 @@ h2 {
 /******* FONCTIONEMENT****/
 /***Restaurants*****/
 /***MENU****/
+/*************COEUR**********/
+@keyframes reverse__check-mark-button__rotate {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes check-mark-button__rotate {
+  from {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+@keyframes check-mark-button__appear {
+  from {
+    opacity: 0;
+    margin-right: -4rem;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+@keyframes reverse__check-mark-button__appear {
+  from {
+    opacity: 1;
+    margin-right: 0;
+  }
+  to {
+    opacity: 0;
+    margin-right: -4rem;
+  }
+}
 nav p {
   font-family: "Shrikhand", cursive;
 }
@@ -56,8 +98,9 @@ nav {
 .footer {
   background: #353535;
   padding: 20px;
+  width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .footer {
     flex-direction: row-reverse;
     gap: 20px;
@@ -71,14 +114,14 @@ nav {
   gap: 7px;
   color: white;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .footer-content {
     display: flex;
     flex-direction: row;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   footer p {
     margin: 16px;
   }
@@ -94,6 +137,10 @@ footer h1 {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+
+footer a {
+  color: white;
 }
 
 .exploration {
@@ -122,7 +169,7 @@ footer h1 {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .fonctionement {
     padding-left: 10%;
     padding-right: 10%;
@@ -146,7 +193,7 @@ footer h1 {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .fonctionement-card {
     display: flex;
     flex-direction: row;
@@ -173,13 +220,18 @@ footer h1 {
   align-items: center;
 }
 
+.fonctionement .card:hover {
+  background-color: #F5EDFF;
+  color: #9356DC;
+}
+
 .Restaurants {
   background: #F7F7F7;
   padding: 25px;
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .Restaurants {
     padding-left: 10%;
     padding-right: 10%;
@@ -200,9 +252,9 @@ footer h1 {
   text-decoration: none;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .Restaurants a {
-    width: 49%;
+    width: 100%;
   }
 }
 
@@ -242,7 +294,7 @@ footer h1 {
 }
 
 .Restaurants .fa-regular {
-  position: absolute;
+  margin-right: -28px;
 }
 
 .Restaurants .fa-solid:hover {
@@ -253,7 +305,7 @@ footer h1 {
   opacity: 1;
   line-height: 1;
   cursor: pointer;
-  transition: opacity 0.8s ease-in 0.3s;
+  transition: opacity 0.3s ease-in 0.3s;
 }
 
 .Restaurants .fa-solid:not(:hover) {
@@ -262,13 +314,25 @@ footer h1 {
   -webkit-background-clip: text;
   color: transparent;
   line-height: 1;
-  transition: opacity 0.8s ease-in 0.3s;
+  transition: opacity 0.3s ease-in 0.3s;
   opacity: 0;
 }
 
-.Restaurants a :hover {
+.Restaurants a:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   filter: brightness(1.1);
+  border-radius: 25px;
+}
+
+.restaurants-container {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .restaurants-container {
+    width: 48%;
+  }
 }
 
 .menu {
@@ -279,7 +343,7 @@ footer h1 {
   border-radius: 45px 45px 0px 0px;
   background: #F7F7F7;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .menu {
     display: flex;
     flex-direction: column;
@@ -297,7 +361,7 @@ footer h1 {
   padding: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .menu-title {
     gap: 25px;
     padding: 0px;
@@ -322,7 +386,7 @@ footer h1 {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
   .menu-card {
     width: 60%;
   }
@@ -341,6 +405,10 @@ footer h1 {
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .menu .card-content {
@@ -348,6 +416,7 @@ footer h1 {
   gap: 6px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .menu-txt {
@@ -366,7 +435,7 @@ footer h1 {
   text-transform: uppercase;
   border-bottom: 3px solid;
   width: 40px;
-  color: #008766;
+  color: #99E2D0;
 }
 
 .prix {
@@ -376,11 +445,11 @@ footer h1 {
   line-height: 18px;
 }
 
-.menu .fa-regular {
-  position: absolute;
+.menu-title .fa-regular {
+  margin-right: -28px;
 }
 
-.menu .fa-solid:hover {
+.menu-title .fa-solid:hover {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -388,17 +457,57 @@ footer h1 {
   opacity: 1;
   line-height: 1;
   cursor: pointer;
-  transition: opacity 0.8s ease-in 0.3s;
+  transition: opacity 0.3s ease-in 0.3s;
 }
 
-.menu .fa-solid:not(:hover) {
+.menu-title .fa-solid:not(:hover) {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   line-height: 1;
-  transition: opacity 0.8s ease-in 0.3s;
+  transition: opacity 0.3s ease-in 0.3s;
   opacity: 0;
+}
+
+.menu-prix i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #99E2D0;
+  animation: reverse__check-mark-button__rotate 0.8s;
+}
+
+.menu-prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 69px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -4rem;
+  animation: reverse__check-mark-button__appear 0.8s;
+}
+
+.card-content p, .card-content h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}
+
+.card:hover .menu-prix {
+  animation: check-mark-button__appear 0.8s forwards ease-in-out;
+}
+
+.card:hover .menu-prix i {
+  animation: check-mark-button__rotate 0.8s forwards ease-in-out;
 }
 
 .bouton {
@@ -455,10 +564,10 @@ footer h1 {
 }
 
 .icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 25px;
+  bottom: 21px;
+  right: 57px;
+  position: absolute;
 }
+
 
 /*# sourceMappingURL=style.css.map */

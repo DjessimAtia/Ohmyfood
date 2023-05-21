@@ -1,0 +1,53 @@
+
+@keyframes reverse__check-mark-button__rotate {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes check-mark-button__rotate {
+    from {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes check-mark-button__appear {
+    from {
+        opacity: 0;
+        margin-right: -4rem;
+    }
+    to {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+@keyframes reverse__check-mark-button__appear {
+    from {
+        opacity: 1;
+        margin-right: 0;
+    }
+    to {
+        opacity: 0;
+        margin-right: -4rem;
+    }
+}
+@keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

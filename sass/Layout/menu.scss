@@ -1,6 +1,6 @@
 .menu{
     @include menu ;
-    @media (min-width: 1024px){
+    @media (min-width: 767px){
        @include colone;
             align-items: center;
             width: 80%;
@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 20px;
 }
-@media (min-width: 1024px){
+@media (min-width: 767px){
 .menu-title{
      gap: 25px;
      padding: 0px;
@@ -31,7 +31,7 @@ line-height: 41px;}
 .menu-card{
    @include colone;
    gap: 20px;
-    @media (min-width: 1024px){
+    @media (min-width: 767px){
        
             width: 60%;
         }
@@ -42,12 +42,18 @@ line-height: 41px;}
 }
 
 .menu .card{
-    @include menucard
+    @include menucard ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
+
 
 .menu .card-content {
   @include card-conteneur;
-  @include colone
+  @include colone;
+  width: 100%;
 }
 .menu-txt{
    @include menu-txt}
@@ -59,21 +65,60 @@ line-height: 41px;}
     text-transform: uppercase;
     border-bottom: 3px solid;
     width: 40px;
-    color: #008766;
+    color: $color-tertiary;
 }
 .prix{
     @include prix
 }
 
 
-.menu .fa-regular{
-    position: absolute;
+.menu-title .fa-regular{
+   margin-right: -28px;
 }
-.menu .fa-solid:hover {
+.menu-title .fa-solid:hover {
     @include hover
   }
-  .menu .fa-solid:not(:hover) {
+  .menu-title .fa-solid:not(:hover) {
     @include nothover
   }
 
 
+.menu-prix i { 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: $color-tertiary;
+    animation: reverse__check-mark-button__rotate 0.8s;
+}
+
+.menu-prix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 69px;
+    background: $color-tertiary;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: -4rem;
+    animation: reverse__check-mark-button__appear 0.8s;
+}
+
+.card-content p, .card-content h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.card:hover .menu-prix {
+    animation: check-mark-button__appear 0.8s forwards ease-in-out;
+}
+
+.card:hover .menu-prix i {
+    animation: check-mark-button__rotate 0.8s forwards ease-in-out;
+}
