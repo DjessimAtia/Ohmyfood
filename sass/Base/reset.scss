@@ -14,6 +14,12 @@ body {
   header{
     width: 100%;
 }
+.main{
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
   * {
     box-sizing: border-box;
     
@@ -31,11 +37,10 @@ p{
 h3{
   margin: 0px;
   color: black;
-}
-h2{
   font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     margin: 0;
 }
+
   
