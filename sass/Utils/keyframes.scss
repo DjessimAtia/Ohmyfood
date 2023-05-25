@@ -1,21 +1,21 @@
-
+/***********PRIX-MENU*******/
 @keyframes reverse__check-mark-button__rotate {
-    from {
+    0% {
         opacity: 1;
         transform: rotate(0deg);
     }
-    to {
+    100% {
         opacity: 0;
         transform: rotate(360deg);
     }
 }
 
 @keyframes check-mark-button__rotate {
-    from {
+    0%{
         opacity: 0;
         transform: rotate(360deg);
     }
-    to {
+    100% {
         opacity: 1;
         transform: rotate(0deg);
     }
@@ -23,31 +23,54 @@
 
 
 @keyframes check-mark-button__appear {
-    from {
+    0% {
         opacity: 0;
         margin-right: -4rem;
     }
-    to {
+    100% {
         opacity: 1;
         margin-right: 0;
     }
 }
 
 @keyframes reverse__check-mark-button__appear {
-    from {
+    0% {
         opacity: 1;
         margin-right: 0;
     }
-    to {
+    100% {
         opacity: 0;
         margin-right: -4rem;
     }
 }
-@keyframes lds-spinner {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+
+
+    
+  /*LOADER****/
+      
+     
+      @keyframes disparition {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+      }
+  
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg);}
+      }
+
+      @keyframes animation-menu {
+        0% {
+            transform: translateX(150px);
+            opacity: 0;
+        }
+        
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+      }

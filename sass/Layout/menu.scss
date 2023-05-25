@@ -1,6 +1,6 @@
 .menu{
     @include menu ;
-    @media (min-width: 767px){
+    @media (min-width: 768px){
        @include colone;
             align-items: center;
             width: 80%;
@@ -13,13 +13,17 @@
     justify-content: space-between;
     padding: 20px;
 }
-@media (min-width: 767px){
+@media (min-width: 768px){
 .menu-title{
      gap: 25px;
      padding: 0px;
 }
 }
+.menu-img{
+    width: 100%;
+}
 .menu-img  img {
+    
     @include menu-img
 }
 .menu h1{
@@ -31,10 +35,13 @@ line-height: 41px;}
 .menu-card{
    @include colone;
    gap: 20px;
-    @media (min-width: 767px){
+    @media (min-width: 768px){
        
             width: 60%;
         }
+}
+.Entrer, .Plats , .Desserts{
+    animation: animation-menu 2.5s;
 }
 .Entrer, .Plats, .Desserts{
     @include colone;
@@ -63,9 +70,9 @@ line-height: 41px;}
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid $color-tertiary;
     width: 40px;
-    color: $color-tertiary;
+
 }
 .prix{
     @include prix
@@ -117,6 +124,7 @@ line-height: 41px;}
 
 .card:hover .menu-prix {
     animation: check-mark-button__appear 0.8s forwards ease-in-out;
+    
 }
 
 .card:hover .menu-prix i {

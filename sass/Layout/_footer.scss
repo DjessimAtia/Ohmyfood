@@ -2,7 +2,7 @@
     background: $fond-gris-footer;
     padding: 20px;
 width: 100%;
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
 
         flex-direction: row-reverse;
         gap: 20px;
@@ -15,14 +15,14 @@ width: 100%;
     gap: 7px;
     color: white;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
 
         display: flex;
         flex-direction: row;
 
     }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     footer p {
         margin: 16px;
     }
