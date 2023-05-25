@@ -4,7 +4,7 @@
        @include colone;
             align-items: center;
             width: 80%;
-                 margin-left: 10%;
+                
         }
         
 }
@@ -40,8 +40,14 @@ line-height: 41px;}
             width: 60%;
         }
 }
-.Entrer, .Plats , .Desserts{
+.Entrer{
+    animation: animation-menu 1.5s;
+}
+.Plats{
     animation: animation-menu 2.5s;
+}
+.Desserts{
+    animation: animation-menu 3.5s;
 }
 .Entrer, .Plats, .Desserts{
     @include colone;
@@ -119,7 +125,7 @@ line-height: 41px;}
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 80%;
+
 }
 
 .card:hover .menu-prix {
