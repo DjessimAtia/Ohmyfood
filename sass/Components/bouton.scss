@@ -24,11 +24,18 @@
 
 
   /**BOUTON-NOUVEAU*****/
-.bouton-nouveau{
-    @include bouton-nouveau;
-    @include flex
-}
-
+  .bouton-nouveau {
+    background: #99E2D0;
+    Width: 80px;
+    Height: 29px;
+    color: #008766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
 /***MENU*****/
 .Commander{
  @include flex;

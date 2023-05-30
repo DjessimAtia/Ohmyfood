@@ -19,17 +19,7 @@
     font-size: 16px;
 }
 
-@mixin bouton-nouveau {
-    background: $color-tertiary;
-    Width: 80px;
-    Height: 29px;
-    position: absolute;
-    color: #008766;
-    font-size: 14px;
-    font-weight: 500;
-    right: 5%;
-    top: 5%;
-}
+
 
 /******* FONCTIONEMENT****/
 @mixin fonctionement-card {

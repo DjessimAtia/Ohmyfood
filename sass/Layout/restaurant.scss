@@ -20,7 +20,9 @@
 
 
  .Restaurants .card {
-    @include restaurantscard
+    @include restaurantscard;
+    position: relative;
+    
 }
 .Restaurants .card img{
     @include img

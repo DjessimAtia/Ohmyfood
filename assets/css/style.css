@@ -309,6 +309,7 @@ footer a {
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  position: relative;
 }
 
 .Restaurants .card img {
@@ -600,15 +601,13 @@ footer a {
   background: #99E2D0;
   Width: 80px;
   Height: 29px;
-  position: absolute;
   color: #008766;
-  font-size: 14px;
-  font-weight: 500;
-  right: 5%;
-  top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 5%;
 }
 
 /***MENU*****/
